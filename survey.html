@@ -38,7 +38,61 @@
         </header>
 
         <main>
-            <h1>Welcome to Saurabh's Website!</h1>
+            <h1>Survey</h1>
+
+            <form action="https://formspree.io/f/mzbyqbpd" method="POST">
+                <p>
+                    <label for="name_field">What is your name?<abbr title="required" aria-label="required">*</abbr></label>
+                    <input id="name_field" type="text" name="name_field" required />
+                </p>
+                <p>
+                    <label for="email_field">What is your email?<abbr title="required" aria-label="required">*</abbr></label>
+                    <input id="email_field" type="email" name="email_field" required />
+                </p>
+                <p>
+                    <label for="best_whole_number">Which whole number is best?</label>
+                    <input id="best_whole_number" type="number" name="best_whole_number" min="1" step="1"/>
+                </p>
+                <p>
+                    <label for="best_day">Which day is best?</label>
+                    <input id="best_day" type="date" name="best_day" />
+                </p>
+                <p>
+                    <label for="best_bear">Which bear is best?<abbr title="required" aria-label="required">*</abbr></label>
+                    <select name="best_bear" id="best_bear" required>
+                        <option value="" label=" "></option>
+                        <option value="Black">Black</option>
+                        <option value="Brown">Brown</option>
+                        <option value="Care">Care</option>
+                        <option value="Panda">Panda</option>
+                        <option value="Polar">Polar</option>
+                        <option value="Teddy">Teddy</option>
+                    </select>
+                </p>
+                <fieldset>
+                    <legend>Do you like radio buttons?</legend>
+                    <ul>
+                        <li>
+                            <input type="radio" name="radio_buttons" id="yes_id" value="yes" />
+                            <label for="yes">Yes</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio_buttons" id="no_id" value="no" />
+                            <label for="no">No</label>
+                        </li>
+                        <li>
+                            <input type="radio" name="radio_buttons" id="none_of_your_business_id" value="?" checked/>
+                            <label for="none_of_your_business">None of your business</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                <p>
+                    <label for="life_meaning">What is the meaning of life?</label>
+                    <textarea name="life_meaning" id="life_meaning" cols="50" rows="5" placeholder="Enter the correct answer here"></textarea>
+                </p>
+                <button type="submit">Send</button>
+            </form>
+
             <a href="images/pp.jpg"> 
                 <img src="images/pp-thum(150).jpg" sizes="(max-width:500px) 150px, 300px" srcset="images/pp-thum(150).jpg 150w, images/pp-thum(300).jpg 300w" alt="Profile Picture">
             </a> 
@@ -56,7 +110,7 @@
                     <tr>
                         <th scope="colgroup">Code</th>
                         <th>Name</th>
-                        <th>Hrs/Week</th>
+                        <th>Hrs/Week</th> 
                     </tr>
                 </thead>
                 <tbody>
