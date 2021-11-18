@@ -116,6 +116,7 @@ nav ul li a {
   display: inline-block;
   text-transform: uppercase;
   font-weight: bold;
+  letter-spacing: 4px;
 }
 
 ol {
@@ -124,6 +125,9 @@ ol {
 
 a {
   text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 nav ul li a:hover {
