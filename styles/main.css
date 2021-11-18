@@ -132,6 +132,7 @@ a:hover {
 
 nav ul li a:hover {
   border-top: 4px solid #79B4B7;
+  text-decoration: none;
 }
 
 /* Table */
