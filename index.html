@@ -44,6 +44,7 @@
                     <li> <a href="glossary.html">Glossary</a> </li>
                     <li><a href="survey.html">Survey</a></li>
                     <li><a href="lorem.html">Lorem Ipsum</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
                 </ul>
             </nav>
         </header>
@@ -53,6 +54,7 @@
             <div class="bio">
                 <a href="images/pp.jpg"> 
                     <img class="profile" src="images/pp-thum(150).jpg" sizes="(max-width:500px) 150px, 300px" srcset="images/pp-thum(150).jpg 150w, images/pp-thum(300).jpg 300w" alt="Profile Picture">
+                    <img class="paperclip" src="images/paperclip.png" alt="paperclip">
                 </a> 
 
                 <p> Hi, I'm Data Scientist </p>
@@ -137,37 +139,56 @@
                         </tr>
                     </tfoot>
                 </table>
+            </div>
+                
+            <h2>My Favourite Things</h2>
+            <div class ="favourites">
+
+                <input type="radio" name="fav-things" value="tab1" id="tab1" checked/>
+                <label for="tab1"><h3>Favourite Company</h3></label>
+                <div>
+                    <figure>
+                        <p><a href="https://www.facebook.com">
+                        <img src="images/logo.png" alt=""></a></p>
+                        <figcaption> FaceBook </figcaption>
+                    </figure>
                 </div>
-                
-                <h2>My Favourite Things</h2>
-                <figure>
-                    <p><a href="https://www.facebook.com">
-                    <img src="images/logo.png" alt=""></a></p>
-                    <figcaption> FaceBook </figcaption>
-                </figure>
-                
-                <h3> Anime </h3>
-                    <ol>
-                        <li>Naruto </li>
-                        <li>One Piece </li>
-                        <li>Haikyu!! </li>
-                    <ol>
-                <h3> Haiku </h3>
-                <p><cite>Calm as a river<br>Tranquility in my heart<br>Blue summer skies reign.</cite></p>
-                <p><span class="author">by Unkonwn</span></p>
 
-                <h3>Public Domain Audiobook</h3>
-                <audio controls>
-                    <source src="https://ia803409.us.archive.org/4/items/mozartsyouth_2106_librivox/mozartsyouth_00_hoffmann_64kb.mp3" type="audio/mpeg">
-                    <source src="https://ia803409.us.archive.org/4/items/mozartsyouth_2106_librivox/mozartsyouth_00_hoffmann_64kb.mp3" type="audio/aac">
-                    <track kind="captions" src="my-track.vvt" srclang="en" >
-                    <a href="https://ia803409.us.archive.org/4/items/mozartsyouth_2106_librivox/mozartsyouth_00_hoffmann_64kb.mp3">Your browser does not support this file please click here to download</a>
-                </audio>
+                <input type="radio" name="fav-things" value="tab2" id="tab2" />
+                <label for="tab2"><h3> Anime </h3></label>
+                    <div>
+                        <ol>
+                            <li>Naruto </li>
+                            <li>One Piece </li>
+                            <li>Haikyu!! </li>
+                        <ol>
+                    </div>
 
-                <h3>YouTube Video</h3>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/xU47nhruN-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            
+                <input type="radio" name="fav-things" value="tab3" id="tab3" />
+                <label for="tab3"><h3> Haiku </h3></label>
+                    <div>
+                        <p><cite>Calm as a river<br>Tranquility in my heart<br>Blue summer skies reign.</cite></p>
+                        <p><span class="author">by Unkonwn</span></p>
+                    </div>
 
+                <input type="radio" name="fav-things" value="tab4" id="tab4" />
+                <label for="tab4"><h3>Public Domain Audiobook</h3></label>
+                    <div>
+                        <audio controls>
+                            <source src="https://ia803409.us.archive.org/4/items/mozartsyouth_2106_librivox/mozartsyouth_00_hoffmann_64kb.mp3" type="audio/mpeg">
+                            <source src="https://ia803409.us.archive.org/4/items/mozartsyouth_2106_librivox/mozartsyouth_00_hoffmann_64kb.mp3" type="audio/aac">
+                            <track kind="captions" src="my-track.vvt" srclang="en" >
+                            <a href="https://ia803409.us.archive.org/4/items/mozartsyouth_2106_librivox/mozartsyouth_00_hoffmann_64kb.mp3">Your browser does not support this file please click here to download</a>
+                        </audio>
+                    </div>
+
+                <input type="radio" name="fav-things" value="tab5" id="tab5" />
+                <label for="tab5"><h3>YouTube Video</h3></label>
+                <div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/xU47nhruN-Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+
+            </div>
         </main>
         
         <footer>
