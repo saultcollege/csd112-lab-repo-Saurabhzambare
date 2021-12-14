@@ -57,10 +57,6 @@ img {
   max-width: 100%;
 }
 
-div[class="bio"] a {
-  display: block;
-}
-
 .profile{
   padding: 2%;
   background-color: white;
@@ -83,15 +79,17 @@ a .paperclip {
   right: -6px;
 }
 
-a[title="Back to top"] {
+a[title="Back-to-top"] {
   margin-left: -25px;
   position: sticky;
   bottom: 10px;
   display: inline-block;
+  transition: transform 200ms;
 }
 
-a[title="Back to top"]:hover {
+a[title="Back-to-top"]:hover {
   transform: rotate(45deg);
+  text-shadow: 1px 1px #64ad6a;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -172,7 +170,6 @@ nav ul li a:hover {
 
 /* Table */
 th, td {
-  border: 1px solid black;
   padding:0.3em 1em;
   }
 
@@ -255,16 +252,6 @@ footer {
   text-align: center;
 }
 
-[href="#top"]:hover {
-  text-shadow: 1px 1px #64ad6a;
-  
-}
-
-a[href="#top"]:hover {
-  transform: rotate(45deg);
-  transition-duration: 200ms;
-}
-
 .gallery {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
@@ -300,7 +287,7 @@ div.gallery {
 }
 
 @media screen and (max-width: 450px) {
-  .col-span-2 {
+  .gallery .col-span-2 {
     grid-column: span 1;
   }
 }
@@ -356,13 +343,14 @@ div.gallery {
     align-items: center;
     height: 0;
     overflow: hidden;
+    transition: height 200ms;
   }
-  nav a {
+  nav ul li a {
     padding-top: 0.5em;
-    border-top: unset;
+    border-top: none;
   }
-  nav a:hover {
-    border-top: unset;
+  nav ul li a:hover {
+    border-top: none;
     text-decoration: underline;
   }
 }
@@ -402,7 +390,7 @@ label.sandwich-icon {
   }
 
   nav input[id="menu-toggle"]:checked + label + ul {
-    height: 200px;
+    height: 250px;
   }
 
   nav input[id="menu-toggle"]:checked + label {
